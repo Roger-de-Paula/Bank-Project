@@ -5,6 +5,7 @@ public class main {
         checkingAccount ca = new checkingAccount();
         savingsAccount sa = new savingsAccount();
 
+
         ca.transfer(100, sa);
 
         ca.bankExtract();
