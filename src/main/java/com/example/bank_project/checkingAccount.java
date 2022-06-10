@@ -7,31 +7,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class checkingAccount {
-    private int agency;
-    private int number;
-    private double balance;
-
-
-
-    private void withdraw() {
-    }
-    private void deposit() {
-    }
-    private void transfer() {
-    }
-
-
-
-    public int getAgency() {
-        return agency;
-    }
-
-    public int getNumber() {
-        return number;
-    }
-
-    public double getBalance() {
-        return balance;
+public class checkingAccount extends Account {
+    @Override
+    public void bankExtract() {
+        System.out.println("===Extract Checking Account===");
+        super.printInformations();
     }
 }
